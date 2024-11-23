@@ -66,7 +66,7 @@
     - name: Configure Nginx
       ansible.builtin.template:
         src: nginx.conf.j2
-        dest: "/etc/nginx/sites-avaiable/default"
+        dest: "/etc/nginx/sites-available/default"
       notify: reload nginx
 
   #  - name: Enable Nginx site
