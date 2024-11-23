@@ -40,7 +40,7 @@
     - name: Pull Docker image
       ansible.builtin.docker_image:
         name: "{{ IMAGE_NAME }}"
-        source: Pull
+        source: pull
     
     - name: Run Docker Container
       ansible.builtin.docker_container:
