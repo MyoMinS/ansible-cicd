@@ -11,8 +11,7 @@ env:
     DOMAIN_NAME: ${{ vars.DOMAIN_NAME }}
 on:
     push:
-        branches:
-            - main
+        branches: [ "master" ]
 jobs:
     build:
         runs-on: ubuntu:latest
